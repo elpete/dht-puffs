@@ -16,10 +16,12 @@
     .brand-logo{display:block;width:clamp(84px,14vw,180px);height:auto;flex:none}
     h1{margin:0;font-size:clamp(2.8rem,8vw,7rem);line-height:.9;letter-spacing:-.055em;text-transform:uppercase}
     .intro{max-width:950px;margin:1.5rem 0 0;font-size:clamp(1.05rem,2vw,1.4rem);line-height:1.5}
-    nav{position:sticky;top:0;z-index:10;display:flex;gap:.5rem;overflow-x:auto;padding:.75rem 3vw;background:rgba(45,36,24,.96);border-bottom:3px solid var(--mustard)}
-    nav a{display:flex;align-items:center;flex:none;min-height:44px;color:var(--paper);font-family:Arial,sans-serif;font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;text-decoration:none;padding:.45rem .65rem;border:1px solid rgba(244,236,207,.32)}
-    nav a:hover,nav a:focus-visible,nav a[aria-current="page"]{color:var(--ink);background:var(--mustard);border-color:var(--mustard)}
-    main{width:min(1500px,94vw);margin:0 auto;padding:clamp(2rem,5vw,5rem) 0 8rem}
+    .primary-nav{position:sticky;top:0;z-index:10;display:flex;gap:.5rem;padding:.75rem 3vw;background:rgba(45,36,24,.96);border-bottom:3px solid var(--mustard)}
+    .primary-nav a,.section-nav a{display:flex;align-items:center;flex:none;min-height:44px;color:var(--paper);font-family:Arial,sans-serif;font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;text-decoration:none;padding:.45rem .65rem;border:1px solid rgba(244,236,207,.32)}
+    .primary-nav a:hover,.primary-nav a:focus-visible,.primary-nav a[aria-current="page"],.section-nav a:hover,.section-nav a:focus-visible{color:var(--ink);background:var(--mustard);border-color:var(--mustard)}
+    .vision-layout{display:grid;grid-template-columns:minmax(210px,240px) minmax(0,1fr);gap:clamp(1.5rem,3vw,3rem);width:min(1600px,96vw);margin:0 auto;align-items:start}
+    .section-nav{position:sticky;top:5.25rem;display:flex;flex-direction:column;gap:.35rem;max-height:calc(100vh - 6.25rem);margin-top:clamp(2rem,5vw,5rem);padding:1rem;overflow-y:auto;background:rgba(45,36,24,.96);border:3px solid var(--mustard)}
+    main{min-width:0;padding:clamp(2rem,5vw,5rem) 0 8rem}
     section{padding:clamp(2rem,4vw,4rem) 0;border-bottom:2px solid rgba(107,75,36,.28);scroll-margin-top:4rem}
     h2{margin:0 0 1.25rem;font-size:clamp(1.8rem,4vw,3.4rem);line-height:1.05}
     h2 a{color:inherit;text-decoration-color:var(--mustard);text-decoration-thickness:.12em;text-underline-offset:.14em}
@@ -54,27 +56,31 @@
     summary{cursor:pointer;padding:1rem;font-size:1.15rem;font-weight:700;background:var(--paper-deep)}
     details ul{margin:0;padding:1rem 1.25rem 1.2rem 2.2rem}
     details li{margin:.4rem 0;line-height:1.4}
-    @media(max-width:560px){header{border-bottom-width:5px}.brand-logo{width:76px}h1{font-size:clamp(2.35rem,12vw,3rem)}nav{padding:.5rem 3vw}.grid{grid-auto-columns:minmax(150px,190px);gap:.55rem}.grid a{border-width:2px;box-shadow:3px 4px 0 var(--shadow)}.grid img{height:170px}.character-grid,.lists{grid-template-columns:1fr}}
+    @media(max-width:760px){.primary-nav{padding:.5rem 3vw}.primary-nav a{flex:1;justify-content:center;text-align:center}.vision-layout{display:block;width:100%}.section-nav{position:static;flex-direction:row;max-height:none;margin:0;padding:.5rem 3vw;overflow-x:auto;overflow-y:hidden;border-width:0 0 3px}.section-nav a{min-height:40px}main{width:94vw;margin:0 auto}}
+    @media(max-width:560px){header{border-bottom-width:5px}.brand-logo{width:76px}h1{font-size:clamp(2.35rem,12vw,3rem)}.grid{grid-auto-columns:minmax(150px,190px);gap:.55rem}.grid a{border-width:2px;box-shadow:3px 4px 0 var(--shadow)}.grid img{height:170px}.character-grid,.lists{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
   <header><div class="brand"><img class="brand-logo" src="/assets/puffs-logo.png" alt="Puffs"><h1>Puffs 2026</h1></div><p class="intro">I am so excited to work with everyone to bring this ridiculous and heartwarming story to life! This page is here to support our collaboration. Please ask a million questions, and feel free to challenge my choices. I love to collaborate and build together to make the best version of the show we can.</p></header>
-  <nav aria-label="Sections">
+  <nav class="primary-nav" aria-label="Primary navigation">
     <a href="/">Cast Home</a>
     <a href="/vision/" aria-current="page">Production Vision</a>
-    <a href="/vision/#characters">Character Descriptions</a>
-    <a href="/vision/#scenes">Scene Breakdown</a>
-    <a href="/vision/#set-design">Set Design</a>
-    <a href="/vision/#light-design">Light Design</a>
-    <a href="/vision/#lighting-cues">Lighting Cues</a>
-    <a href="/vision/#sound">Sound Cues</a>
-    <a href="/vision/#props-and-misc">Props and Misc</a>
-    <a href="/vision/#props">Prop List</a>
-    <a href="/vision/#costumes-and-wigs">Costumes and Wigs</a>
-    <a href="/vision/#costume-breakdown">Costume Breakdown</a>
-    <a href="/vision/#dont-want">Don’t Want</a>
   </nav>
-  <main>
+  <div class="vision-layout">
+    <nav class="section-nav" aria-label="Production vision sections">
+      <a href="/vision/#characters">Character Descriptions</a>
+      <a href="/vision/#scenes">Scene Breakdown</a>
+      <a href="/vision/#set-design">Set Design</a>
+      <a href="/vision/#light-design">Light Design</a>
+      <a href="/vision/#lighting-cues">Lighting Cues</a>
+      <a href="/vision/#sound">Sound Cues</a>
+      <a href="/vision/#props-and-misc">Props and Misc</a>
+      <a href="/vision/#props">Prop List</a>
+      <a href="/vision/#costumes-and-wigs">Costumes and Wigs</a>
+      <a href="/vision/#costume-breakdown">Costume Breakdown</a>
+      <a href="/vision/#dont-want">Don’t Want</a>
+    </nav>
+    <main>
     <section id="characters"><h2>Character Descriptions</h2><div id="character-grid" class="character-grid"></div></section>
     <section id="scenes"><h2>Scene Breakdown</h2><a class="sheet-link" href="https://docs.google.com/spreadsheets/d/1pRKBtr6w2jcuXF_HH6H9rEWXm1Xmao1TdsHMbr5zODU/edit" target="_blank" rel="noopener">Open rehearsal breakdown</a><div class="table-wrap"><table><thead><tr><th>Act</th><th>Year</th><th>Scene</th><th>Script pages</th><th>People</th></tr></thead><tbody id="scene-rows"></tbody></table></div></section>
     <p class="board-instruction">Click a section title to go to the full Pinterest board.</p>
@@ -87,7 +93,8 @@
     <div id="costumes-board"></div>
     <section id="costume-breakdown"><h2>Costume Breakdown</h2><div id="costume-lists"></div></section>
     <div id="dont-want"></div>
-  </main>
+    </main>
+  </div>
   <script src="production-data.js"></script>
   <script src="scene-people.js"></script>
   <script src="board-data.js"></script>
