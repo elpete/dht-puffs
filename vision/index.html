@@ -19,6 +19,7 @@
     .primary-nav{position:sticky;top:0;z-index:10;display:flex;gap:.5rem;padding:.75rem 3vw;background:rgba(45,36,24,.96);border-bottom:3px solid var(--mustard)}
     .primary-nav a,.section-nav a{display:flex;align-items:center;flex:none;min-height:44px;color:var(--paper);font-family:Arial,sans-serif;font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;text-decoration:none;padding:.45rem .65rem;border:1px solid rgba(244,236,207,.32)}
     .primary-nav a:hover,.primary-nav a:focus-visible,.primary-nav a[aria-current="page"],.section-nav a:hover,.section-nav a:focus-visible{color:var(--ink);background:var(--mustard);border-color:var(--mustard)}
+    .external-link::after{content:"\2197";margin-left:.45em;font-size:1.15em;line-height:1;transform:translateY(-.08em)}
     .vision-layout{display:grid;grid-template-columns:minmax(210px,240px) minmax(0,1fr);gap:clamp(1.5rem,3vw,3rem);width:min(1600px,96vw);margin:0 auto;align-items:start}
     .section-nav{position:sticky;top:5.25rem;display:flex;flex-direction:column;gap:.35rem;max-height:calc(100vh - 6.25rem);margin-top:clamp(2rem,5vw,5rem);padding:1rem;overflow-y:auto;background:rgba(45,36,24,.96);border:3px solid var(--mustard)}
     main{min-width:0;padding:clamp(2rem,5vw,5rem) 0 8rem}
@@ -65,7 +66,7 @@
   <nav class="primary-nav" aria-label="Primary navigation">
     <a href="/">Cast Home</a>
     <a href="/vision/" aria-current="page">Production Vision</a>
-    <a href="https://web.groupme.com/chats/group/116979585" target="_blank" rel="noopener">GroupMe</a>
+    <a class="external-link" href="https://web.groupme.com/chats/group/116979585" target="_blank" rel="noopener" aria-label="GroupMe (opens in a new tab)">GroupMe</a>
   </nav>
   <div class="vision-layout">
     <nav class="section-nav" aria-label="Production vision sections">

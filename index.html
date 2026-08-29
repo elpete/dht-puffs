@@ -18,6 +18,7 @@
     nav{position:sticky;top:0;z-index:10;display:flex;gap:.5rem;padding:.75rem 3vw;background:rgba(45,36,24,.96);border-bottom:3px solid var(--mustard)}
     nav a{display:flex;align-items:center;min-height:44px;color:var(--paper);font-family:Arial,sans-serif;font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;text-decoration:none;padding:.45rem .8rem;border:1px solid rgba(244,236,207,.32)}
     nav a:hover,nav a:focus-visible,nav a[aria-current="page"]{color:var(--ink);background:var(--mustard);border-color:var(--mustard)}
+    .external-link::after{content:"\2197";margin-left:.45em;font-size:1.15em;line-height:1;transform:translateY(-.08em)}
     main{display:grid;place-items:start;gap:clamp(2rem,5vw,4rem);width:min(1500px,94vw);margin:0 auto;padding:clamp(2rem,5vw,5rem) 0 8rem}
     .cast-card{width:min(720px,100%);padding:clamp(1.5rem,4vw,3rem);background:rgba(255,250,230,.6);border:3px solid var(--brown);box-shadow:7px 8px 0 var(--shadow)}
     .calendar-card{width:100%;padding:clamp(1.5rem,4vw,3rem);background:rgba(255,250,230,.6);border:3px solid var(--brown);box-shadow:7px 8px 0 var(--shadow)}
@@ -42,20 +43,20 @@
   <nav aria-label="Primary navigation">
     <a href="/" aria-current="page">Cast Home</a>
     <a href="/vision/">Production Vision</a>
-    <a href="https://web.groupme.com/chats/group/116979585" target="_blank" rel="noopener">GroupMe</a>
+    <a class="external-link" href="https://web.groupme.com/chats/group/116979585" target="_blank" rel="noopener" aria-label="GroupMe (opens in a new tab)">GroupMe</a>
   </nav>
   <main>
     <section class="cast-card" aria-labelledby="cast-resources-title">
       <h2 id="cast-resources-title">Cast Resources</h2>
       <p>Find the latest shared files and production materials in our cast folder.</p>
-      <a class="drive-link" href="https://drive.google.com/drive/folders/1mqZgtz2kPDe678QekRyaJdDXzWyVboay?usp=sharing" target="_blank" rel="noopener">Open Cast Google Drive</a>
+      <a class="drive-link external-link" href="https://drive.google.com/drive/folders/1mqZgtz2kPDe678QekRyaJdDXzWyVboay?usp=sharing" target="_blank" rel="noopener" aria-label="Open Cast Google Drive (opens in a new tab)">Open Cast Google Drive</a>
     </section>
     <section class="calendar-card" aria-labelledby="cast-calendar-title">
       <h2 id="cast-calendar-title">Cast Calendar</h2>
       <p>Rehearsals, performances, and other production dates are shown in Mountain Time.</p>
       <div class="link-row">
-        <a class="drive-link" href="https://calendar.google.com/calendar/r?cid=8290f2457cb8bb5372159ebaf639e44afbb54a0dc647178d8d0b62ca820baa52%40group.calendar.google.com" target="_blank" rel="noopener">Open Google Calendar</a>
-        <a class="drive-link" href="https://docs.google.com/spreadsheets/d/1Whq48ThQPzrBjBhK5BPg5CJMkmJNkiJ6RI-S8J1-vec/edit?usp=drivesdk" target="_blank" rel="noopener">Open Cast Schedule</a>
+        <a class="drive-link external-link" href="https://calendar.google.com/calendar/r?cid=8290f2457cb8bb5372159ebaf639e44afbb54a0dc647178d8d0b62ca820baa52%40group.calendar.google.com" target="_blank" rel="noopener" aria-label="Open Google Calendar (opens in a new tab)">Open Google Calendar</a>
+        <a class="drive-link external-link" href="https://docs.google.com/spreadsheets/d/1Whq48ThQPzrBjBhK5BPg5CJMkmJNkiJ6RI-S8J1-vec/edit?usp=drivesdk" target="_blank" rel="noopener" aria-label="Open Cast Schedule (opens in a new tab)">Open Cast Schedule</a>
       </div>
       <iframe class="calendar-frame" src="https://calendar.google.com/calendar/embed?height=700&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FDenver&amp;showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;src=8290f2457cb8bb5372159ebaf639e44afbb54a0dc647178d8d0b62ca820baa52%40group.calendar.google.com&amp;color=%23d2a51f" title="DHT Puffs cast calendar" loading="lazy"></iframe>
     </section>
