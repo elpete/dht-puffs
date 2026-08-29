@@ -5,12 +5,15 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <base href="/">
   <title>Puffs 2026 Vision</title>
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
   <style>
     :root{--ink:#2d2418;--paper:#f4eccf;--paper-deep:#e7d7a8;--mustard:#d2a51f;--brown:#6b4b24;--green:#52623b;--shadow:rgba(45,36,24,.18)}
     *{box-sizing:border-box}
     html{background:#362819;scroll-behavior:smooth}
     body{margin:0;color:var(--ink);font-family:Georgia,"Times New Roman",serif;background:radial-gradient(circle at 20% 0,#fff8df 0,transparent 35%),linear-gradient(135deg,var(--paper),#eadbb4);min-height:100vh}
     header{padding:clamp(2rem,6vw,5rem) clamp(1rem,5vw,5rem) 2rem;border-bottom:8px solid var(--mustard);background:rgba(244,236,207,.8)}
+    .brand{display:flex;align-items:center;gap:clamp(.75rem,2vw,1.5rem)}
+    .brand-logo{display:block;width:clamp(84px,14vw,180px);height:auto;flex:none}
     h1{margin:0;font-size:clamp(2.8rem,8vw,7rem);line-height:.9;letter-spacing:-.055em;text-transform:uppercase}
     .intro{max-width:950px;margin:1.5rem 0 0;font-size:clamp(1.05rem,2vw,1.4rem);line-height:1.5}
     nav{position:sticky;top:0;z-index:10;display:flex;gap:.5rem;overflow-x:auto;padding:.75rem 3vw;background:rgba(45,36,24,.96);border-bottom:3px solid var(--mustard)}
@@ -51,11 +54,11 @@
     summary{cursor:pointer;padding:1rem;font-size:1.15rem;font-weight:700;background:var(--paper-deep)}
     details ul{margin:0;padding:1rem 1.25rem 1.2rem 2.2rem}
     details li{margin:.4rem 0;line-height:1.4}
-    @media(max-width:560px){header{border-bottom-width:5px}nav{padding:.5rem 3vw}.grid{grid-auto-columns:minmax(150px,190px);gap:.55rem}.grid a{border-width:2px;box-shadow:3px 4px 0 var(--shadow)}.grid img{height:170px}.character-grid,.lists{grid-template-columns:1fr}}
+    @media(max-width:560px){header{border-bottom-width:5px}.brand-logo{width:76px}h1{font-size:clamp(2.35rem,12vw,3rem)}nav{padding:.5rem 3vw}.grid{grid-auto-columns:minmax(150px,190px);gap:.55rem}.grid a{border-width:2px;box-shadow:3px 4px 0 var(--shadow)}.grid img{height:170px}.character-grid,.lists{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
-  <header><h1>Puffs 2026</h1><p class="intro">I am so excited to work with everyone to bring this ridiculous and heartwarming story to life! This page is here to support our collaboration. Please ask a million questions, and feel free to challenge my choices. I love to collaborate and build together to make the best version of the show we can.</p></header>
+  <header><div class="brand"><img class="brand-logo" src="/assets/puffs-logo.png" alt="Puffs"><h1>Puffs 2026</h1></div><p class="intro">I am so excited to work with everyone to bring this ridiculous and heartwarming story to life! This page is here to support our collaboration. Please ask a million questions, and feel free to challenge my choices. I love to collaborate and build together to make the best version of the show we can.</p></header>
   <nav aria-label="Sections">
     <a href="/">Cast Home</a>
     <a href="/vision/" aria-current="page">Production Vision</a>
