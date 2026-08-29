@@ -14,7 +14,8 @@
     h1{margin:0;font-size:clamp(2.8rem,8vw,7rem);line-height:.9;letter-spacing:-.055em;text-transform:uppercase}
     .intro{max-width:950px;margin:1.5rem 0 0;font-size:clamp(1.05rem,2vw,1.4rem);line-height:1.5}
     nav{position:sticky;top:0;z-index:10;display:flex;gap:.5rem;overflow-x:auto;padding:.75rem 3vw;background:rgba(45,36,24,.96);border-bottom:3px solid var(--mustard)}
-    nav a{flex:none;color:var(--paper);font-family:Arial,sans-serif;font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;text-decoration:none;padding:.45rem .65rem;border:1px solid rgba(244,236,207,.32)}
+    nav a{display:flex;align-items:center;flex:none;min-height:44px;color:var(--paper);font-family:Arial,sans-serif;font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;text-decoration:none;padding:.45rem .65rem;border:1px solid rgba(244,236,207,.32)}
+    nav a:hover,nav a:focus-visible,nav a[aria-current="page"]{color:var(--ink);background:var(--mustard);border-color:var(--mustard)}
     main{width:min(1500px,94vw);margin:0 auto;padding:clamp(2rem,5vw,5rem) 0 8rem}
     section{padding:clamp(2rem,4vw,4rem) 0;border-bottom:2px solid rgba(107,75,36,.28);scroll-margin-top:4rem}
     h2{margin:0 0 1.25rem;font-size:clamp(1.8rem,4vw,3.4rem);line-height:1.05}
@@ -50,12 +51,14 @@
     summary{cursor:pointer;padding:1rem;font-size:1.15rem;font-weight:700;background:var(--paper-deep)}
     details ul{margin:0;padding:1rem 1.25rem 1.2rem 2.2rem}
     details li{margin:.4rem 0;line-height:1.4}
-    @media(max-width:560px){header{border-bottom-width:5px}.grid{grid-auto-columns:minmax(150px,190px);gap:.55rem}.grid a{border-width:2px;box-shadow:3px 4px 0 var(--shadow)}.grid img{height:170px}.character-grid,.lists{grid-template-columns:1fr}}
+    @media(max-width:560px){header{border-bottom-width:5px}nav{padding:.5rem 3vw}.grid{grid-auto-columns:minmax(150px,190px);gap:.55rem}.grid a{border-width:2px;box-shadow:3px 4px 0 var(--shadow)}.grid img{height:170px}.character-grid,.lists{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
   <header><h1>Puffs 2026</h1><p class="intro">I am so excited to work with everyone to bring this ridiculous and heartwarming story to life! This page is here to support our collaboration. Please ask a million questions, and feel free to challenge my choices. I love to collaborate and build together to make the best version of the show we can.</p></header>
   <nav aria-label="Sections">
+    <a href="/">Cast Home</a>
+    <a href="/vision/" aria-current="page">Production Vision</a>
     <a href="/vision/#characters">Character Descriptions</a>
     <a href="/vision/#scenes">Scene Breakdown</a>
     <a href="/vision/#set-design">Set Design</a>
