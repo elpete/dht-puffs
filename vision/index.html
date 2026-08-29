@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <base href="/">
+  <title>Puffs 2026 Vision</title>
+  <style>
+    :root{--ink:#2d2418;--paper:#f4eccf;--paper-deep:#e7d7a8;--mustard:#d2a51f;--brown:#6b4b24;--green:#52623b;--shadow:rgba(45,36,24,.18)}
+    *{box-sizing:border-box}
+    html{background:#362819;scroll-behavior:smooth}
+    body{margin:0;color:var(--ink);font-family:Georgia,"Times New Roman",serif;background:radial-gradient(circle at 20% 0,#fff8df 0,transparent 35%),linear-gradient(135deg,var(--paper),#eadbb4);min-height:100vh}
+    header{padding:clamp(2rem,6vw,5rem) clamp(1rem,5vw,5rem) 2rem;border-bottom:8px solid var(--mustard);background:rgba(244,236,207,.8)}
+    h1{margin:0;font-size:clamp(2.8rem,8vw,7rem);line-height:.9;letter-spacing:-.055em;text-transform:uppercase}
+    .intro{max-width:950px;margin:1.5rem 0 0;font-size:clamp(1.05rem,2vw,1.4rem);line-height:1.5}
+    nav{position:sticky;top:0;z-index:10;display:flex;gap:.5rem;overflow-x:auto;padding:.75rem 3vw;background:rgba(45,36,24,.96);border-bottom:3px solid var(--mustard)}
+    nav a{flex:none;color:var(--paper);font-family:Arial,sans-serif;font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;text-decoration:none;padding:.45rem .65rem;border:1px solid rgba(244,236,207,.32)}
+    main{width:min(1500px,94vw);margin:0 auto;padding:clamp(2rem,5vw,5rem) 0 8rem}
+    section{padding:clamp(2rem,4vw,4rem) 0;border-bottom:2px solid rgba(107,75,36,.28);scroll-margin-top:4rem}
+    h2{margin:0 0 1.25rem;font-size:clamp(1.8rem,4vw,3.4rem);line-height:1.05}
+    h2 a{color:inherit;text-decoration-color:var(--mustard);text-decoration-thickness:.12em;text-underline-offset:.14em}
+    h2 a:hover,h2 a:focus-visible{color:var(--brown)}
+    h3{margin:0 0 .55rem;font-size:1.25rem}
+    p{margin:.35rem 0 0;line-height:1.5}
+    .character-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:1rem}
+    .character{padding:1.1rem;background:rgba(255,250,230,.6);border:2px solid var(--brown);box-shadow:4px 5px 0 var(--shadow)}
+    .track{font:700 .78rem/1.4 Arial,sans-serif;text-transform:uppercase;letter-spacing:.045em;color:var(--green);margin-bottom:.6rem}
+    .table-wrap{overflow-x:auto;border:2px solid var(--brown);background:rgba(255,250,230,.55)}
+    table{width:100%;border-collapse:collapse;font-family:Arial,sans-serif;font-size:.94rem}
+    th,td{padding:.7rem .8rem;text-align:left;border-bottom:1px solid rgba(107,75,36,.25);vertical-align:top}
+    th{background:var(--brown);color:var(--paper);text-transform:uppercase;letter-spacing:.05em;font-size:.76rem}
+    tr:last-child td{border-bottom:0}
+    .grid{display:grid;grid-template-rows:repeat(2,minmax(0,auto));grid-auto-flow:column;grid-auto-columns:minmax(210px,280px);gap:clamp(.7rem,1.5vw,1.25rem);align-items:start;overflow-x:auto;padding:0 .4rem 1.25rem .1rem;scrollbar-color:var(--brown) var(--paper-deep)}
+    .grid a{display:block;background:var(--paper-deep);border:3px solid var(--brown);box-shadow:5px 6px 0 var(--shadow);overflow:hidden;transition:transform .15s ease,box-shadow .15s ease}
+    .grid a:hover,.grid a:focus-visible{transform:translate(-2px,-2px);box-shadow:8px 9px 0 var(--shadow)}
+    .grid img{display:block;width:100%;height:230px;object-fit:cover;background:var(--paper-deep)}
+    .lists{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:1rem}
+    .board-instruction{margin:0;padding:1rem 0 .15rem;font-family:Arial,sans-serif;font-weight:700;color:var(--brown)}
+    .board-note{margin:-.35rem 0 1.25rem;padding:.8rem 1rem;border-left:5px solid var(--mustard);background:rgba(255,250,230,.62);font-family:Arial,sans-serif;font-weight:700;line-height:1.4}
+    .sheet-link{display:inline-block;margin:0 0 1.25rem;padding:.65rem .85rem;color:var(--paper);background:var(--brown);font:700 .82rem/1 Arial,sans-serif;text-transform:uppercase;letter-spacing:.05em;text-decoration:none;border:2px solid var(--brown)}
+    .sheet-link:hover,.sheet-link:focus-visible{color:var(--ink);background:var(--mustard)}
+    .prop-group,.sound-group{margin-bottom:1.5rem}
+    .prop-group h3,.sound-group h3{margin-bottom:.7rem}
+    .prop-table th:nth-child(1){width:45%}
+    .prop-table th:nth-child(2){width:35%}
+    .prop-table th:nth-child(3){width:20%}
+    .sound-table th:nth-child(1){width:80%}
+    .sound-table th:nth-child(2){width:20%}
+    details{background:rgba(255,250,230,.62);border:2px solid var(--brown)}
+    summary{cursor:pointer;padding:1rem;font-size:1.15rem;font-weight:700;background:var(--paper-deep)}
+    details ul{margin:0;padding:1rem 1.25rem 1.2rem 2.2rem}
+    details li{margin:.4rem 0;line-height:1.4}
+    @media(max-width:560px){header{border-bottom-width:5px}.grid{grid-auto-columns:minmax(150px,190px);gap:.55rem}.grid a{border-width:2px;box-shadow:3px 4px 0 var(--shadow)}.grid img{height:170px}.character-grid,.lists{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header><h1>Puffs 2026</h1><p class="intro">I am so excited to work with everyone to bring this ridiculous and heartwarming story to life! This page is here to support our collaboration. Please ask a million questions, and feel free to challenge my choices. I love to collaborate and build together to make the best version of the show we can.</p></header>
+  <nav aria-label="Sections">
+    <a href="/vision/#characters">Character Descriptions</a>
+    <a href="/vision/#scenes">Scene Breakdown</a>
+    <a href="/vision/#set-design">Set Design</a>
+    <a href="/vision/#light-design">Light Design</a>
+    <a href="/vision/#lighting-cues">Lighting Cues</a>
+    <a href="/vision/#sound">Sound Cues</a>
+    <a href="/vision/#props-and-misc">Props and Misc</a>
+    <a href="/vision/#props">Prop List</a>
+    <a href="/vision/#costumes-and-wigs">Costumes and Wigs</a>
+    <a href="/vision/#costume-breakdown">Costume Breakdown</a>
+    <a href="/vision/#dont-want">Don’t Want</a>
+  </nav>
+  <main>
+    <section id="characters"><h2>Character Descriptions</h2><div id="character-grid" class="character-grid"></div></section>
+    <section id="scenes"><h2>Scene Breakdown</h2><a class="sheet-link" href="https://docs.google.com/spreadsheets/d/1pRKBtr6w2jcuXF_HH6H9rEWXm1Xmao1TdsHMbr5zODU/edit" target="_blank" rel="noopener">Open rehearsal breakdown</a><div class="table-wrap"><table><thead><tr><th>Act</th><th>Year</th><th>Scene</th><th>Script pages</th><th>People</th></tr></thead><tbody id="scene-rows"></tbody></table></div></section>
+    <p class="board-instruction">Click a section title to go to the full Pinterest board.</p>
+    <div id="set-board"></div>
+    <div id="light-board"></div>
+    <section id="lighting-cues"><h2>Lighting Cues</h2><div id="lighting-lists"></div></section>
+    <section id="sound"><h2>Sound Cues</h2><div id="sound-lists" class="lists"></div></section>
+    <div id="props-board"></div>
+    <section id="props"><h2>Prop List</h2><div id="prop-lists" class="lists"></div></section>
+    <div id="costumes-board"></div>
+    <section id="costume-breakdown"><h2>Costume Breakdown</h2><div id="costume-lists"></div></section>
+    <div id="dont-want"></div>
+  </main>
+  <script src="production-data.js"></script>
+  <script src="scene-people.js"></script>
+  <script src="board-data.js"></script>
+  <script>
+    const production=window.PUFFS_PRODUCTION;
+    const make=(tag,text)=>{const element=document.createElement(tag);if(text!==undefined)element.textContent=text;return element};
+
+    const characterRoot=document.querySelector('#character-grid');
+    production.characters.forEach(character=>{
+      const card=make('article');card.className='character';
+      const name=make('h3',character.name);const track=make('div',character.track);track.className='track';const description=make('p',character.description);
+      card.append(name,track,description);characterRoot.append(card);
+    });
+
+    const sceneRows=document.querySelector('#scene-rows');
+    production.scenes.forEach(scene=>{
+      const row=make('tr');['act','year','name','pages'].forEach(key=>row.append(make('td',scene[key])));
+      row.append(make('td',window.PUFFS_SCENE_PEOPLE[`${scene.name}|${scene.pages}`]||''));sceneRows.append(row);
+    });
+
+    const costumeRoot=document.querySelector('#costume-lists');
+    production.costumes.forEach(group=>{
+      const container=make('div');container.className='prop-group';container.append(make('h3',group.group));
+      const wrap=make('div');wrap.className='table-wrap';const table=make('table');
+      const head=make('thead');const headRow=make('tr');['Character / track','Costume or wearable','Script page','Requirement / note'].forEach(label=>headRow.append(make('th',label)));head.append(headRow);
+      const body=make('tbody');group.items.forEach(costume=>{const row=make('tr');row.append(make('td',costume.character),make('td',costume.item),make('td',costume.page),make('td',costume.status));body.append(row)});
+      table.append(head,body);wrap.append(table);container.append(wrap);costumeRoot.append(container);
+    });
+
+    const propRoot=document.querySelector('#prop-lists');propRoot.className='';
+    production.props.forEach(group=>{
+      const container=make('div');container.className='prop-group';container.append(make('h3',group.group));
+      const wrap=make('div');wrap.className='table-wrap';const table=make('table');table.className='prop-table';
+      const head=make('thead');const headRow=make('tr');['Item','Used by','Script page'].forEach(label=>headRow.append(make('th',label)));head.append(headRow);
+      const body=make('tbody');group.items.forEach(prop=>{const row=make('tr');row.append(make('td',prop.item),make('td',prop.usedBy),make('td',prop.page));body.append(row)});
+      table.append(head,body);wrap.append(table);container.append(wrap);propRoot.append(container);
+    });
+    const soundRoot=document.querySelector('#sound-lists');soundRoot.className='';
+    production.sound.forEach(group=>{
+      const container=make('div');container.className='sound-group';container.append(make('h3',group.act));
+      const wrap=make('div');wrap.className='table-wrap';const table=make('table');table.className='sound-table';
+      const head=make('thead');const headRow=make('tr');['Cue','Script page'].forEach(label=>headRow.append(make('th',label)));head.append(headRow);
+      const body=make('tbody');group.cues.forEach(sound=>{const row=make('tr');row.append(make('td',sound.cue),make('td',sound.page));body.append(row)});
+      table.append(head,body);wrap.append(table);container.append(wrap);soundRoot.append(container);
+    });
+    const lightingRoot=document.querySelector('#lighting-lists');
+    production.lighting.forEach(group=>{
+      const container=make('div');container.className='sound-group';container.append(make('h3',group.act));
+      const wrap=make('div');wrap.className='table-wrap';const table=make('table');
+      const head=make('thead');const headRow=make('tr');['Cue','Script page','Look / action','Source'].forEach(label=>headRow.append(make('th',label)));head.append(headRow);
+      const body=make('tbody');group.cues.forEach(light=>{const row=make('tr');row.append(make('td',light.cue),make('td',light.page),make('td',light.look),make('td',light.status));body.append(row)});
+      table.append(head,body);wrap.append(table);container.append(wrap);lightingRoot.append(container);
+    });
+
+    const renderBoard=board=>{
+      const section=make('section');
+      const plainName=board.name.replace(/\s*\(Puffs 2026\)\s*$/i,'');
+      section.id=plainName.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+      const title=make('h2');const boardLink=make('a',plainName);
+      boardLink.href=board.href;boardLink.target='_blank';boardLink.rel='noopener';title.append(boardLink);
+      const grid=make('div');grid.className='grid';
+      board.pins.forEach(pin=>{const link=make('a');const image=make('img');link.href=pin.href;link.target='_blank';link.rel='noopener';image.src=pin.src;image.alt='';image.loading='lazy';link.append(image);grid.append(link)});
+      section.append(title);
+      if(plainName==='Don’t Want'){const note=make('p','Ask me for details about what I don’t like in each image.');note.className='board-note';section.append(note)}
+      section.append(grid);return section;
+    };
+    const boardTargets={
+      'Set Design':'#set-board',
+      'Light Design':'#light-board',
+      'Props and Misc':'#props-board',
+      'Costumes and Wigs':'#costumes-board',
+      'Don’t Want':'#dont-want'
+    };
+    (window.PUFFS_BOARDS||[]).forEach(board=>{
+      const plainName=board.name.replace(/\s*\(Puffs 2026\)\s*$/i,'');
+      const target=document.querySelector(boardTargets[plainName]);if(target)target.append(renderBoard(board));
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+window.PUFFS_REFERENCES = {
+  set: [
+    ["1144336586605605588","399526be7b3c8b7be19b002191497389.jpg","Architecture and plants"],
+    ["1144336586605605220","b7ee451168e49f9f0f02b3765d9ead8c.jpg","Multiple playing areas"],
+    ["1144336586605605191","d7cf46b0ccf7d3e913bf9f6f1f1bc76a.jpg","Transformable stage"],
+    ["1144336586605605172","1853ce6947afd029ec54c143cc03cfd1.jpg","Levels, light, and plants"],
+    ["1144336586605605158","2f8098a29bd03e5b12a6893ba1f00680.jpg","Open architecture"],
+    ["1144336586605604990","f89b2fed3f736e5c426bb4f8a160f5d2.jpg","Stairs and routes"],
+    ["1144336586605604962","2d691781f1582c58a93572cf5c307a4b.jpg","Statement arrangement"],
+    ["1144336586605603012","a93791c99d7b57ad92be6fc1e79bb04a.jpg","Multiple playing levels"],
+    ["1144336586605602943","69f7aef18a207ce18382761a0a03688e.jpg","Modular stairs"],
+    ["1144336586605602931","232207b69a3607220cd6f71b41d73e16.jpg","Rolling stair mechanics"],
+    ["1144336586605602882","c38b33d0feed9116c973ac67b9436bca.jpg","Wood architecture and plants"],
+    ["1144336586605602853","85344b8804abe415dfdeed6e7e05a989.jpg","Color through intentional dressing"],
+    ["1144336586605602827","ed779579c2c2854bee09e3cfadf0eb7f.jpg","A clear entrance"],
+    ["1144336586605602718","bf10cbe3b78be13a0cb77df31a941dea.jpg","Open stage vocabulary"],
+    ["1144336586605602714","d84f7af0b4d791fae1c76a42c4a6c46e.jpg","Ensemble in the architecture"]
+  ],
+  lighting: [
+    ["1144336586605604774","f1c0fe6071d33d7b68650cd7ed091bac.jpg","Warm focus"],
+    ["1144336586605604744","c59a31b309f7e954f0b14cb346963683.jpg","Color with faces still visible"],
+    ["1144336586605604737","b003f7e2c47536c132b7a74ce81068ba.jpg","Lighting changes the same space"],
+    ["1144336586605603710","8c8016aeb1615b795d579f6bf83d9846.jpg","Air and movement"],
+    ["1144336586605603120","8591f23e5d39f141a86d292bddba79f5.jpg","Character focus"],
+    ["1144336586605603033","5e14ffaab102bbc34c4968d0abee0350.jpg","Warm ensemble energy"],
+    ["1144336586605602978","76821a3e1c150327465b6851196159b1.jpg","Colorful without becoming blocky"],
+    ["1144336586605602905","02d55f8686b2321634877b3f558b5c10.jpg","Storytelling levels"],
+    ["1144336586605602862","7d315554d6fb6a0b2c11fe0b9b9a5eb2.jpg","Controlled saturated color"],
+    ["1144336586605602812","e9dd44e4367df5b5b9eb9753d89c5845.jpg","Warm interior glow"],
+    ["1144336586605602727","3cdf4f455e005b142b50e06fcdbd1b22.jpg","Color and contrast"],
+    ["1144336586605602687","2472863da45d7c00f2e75c4713113e9d.jpg","Theatrical reveal"]
+  ],
+  props: [
+    ["1144336586605604475","8b40ac35a9988e58812973849419baf1.jpg","Simple theatrical solution"],
+    ["1144336586605603639","8139d0ea0e41aa516f471abea562e122.jpg","Books and character objects"],
+    ["1144336586605603632","d158ac64021d3a4866190e0acc211b12.jpg","Intentional prop grouping"],
+    ["1144336586605603625","ca20f958cbe95cf5e6aee9327831d394.jpg","One object does the work"],
+    ["1144336586605603502","0516e5fa8b4601a7dd5da6c6b02b1c90.jpg","Big readable prop moment"],
+    ["1144336586605603094","8799ad2ec1e4b283604088e5d64232cb.jpg","Character and prop together"]
+  ],
+  costumes: [
+    ["1144336586605604397","111f9d6d9f21538b413643664ff53380.jpg","Bippy"],
+    ["1144336586605604322","656e0c051c633cdacf99223327ccc0f3.jpg","Simple, ridiculous transformation"],
+    ["1144336586605604310","7ea9ef16b1c0cbd60ee30ae286af9958.jpg","Visible theatrical artifice"],
+    ["1144336586605604226","6c0b971b970a02eff757f9c48f3aa76f.jpg","One clear character silhouette"],
+    ["1144336586605604076","326c52f4cd49b027c8679e94b8a99c95.jpg","Cedric"],
+    ["1144336586605604036","7870a92ce47b923479b38570c16d1610.jpg","Character specificity"],
+    ["1144336586605603975","bb14eb3754dc49bbc70a6aed964fea65.jpg","Ridiculous adult wig"],
+    ["1144336586605603815","87252900863d2d1282fc292f5fa9aa6d.jpg","Distinct people in one world"],
+    ["1144336586605603085","8799ad2ec1e4b283604088e5d64232cb.jpg","Capes and character pieces"],
+    ["1144336586605603081","fefe5e65e99dcaca21d1f549ccae41ed.jpg","Commit to the doubled character"],
+    ["1144336586605603075","a49544ac087f9be4ae345d664ad84a54.jpg","Costume tells us who entered"],
+    ["1144336586605603054","82ca81b14f6ec2952ce2709e3f1538b0.jpg","Immediate character read"],
+    ["1144336586605602843","31974ae471a14d2ba9539ce392107411.jpg","A specific silhouette"],
+    ["1144336586605602798","1707955ab28bfc8594b01d872930bf3b.jpg","Shared language, distinct characters"]
+  ],
+  boundaries: [
+    ["1144336586605605605","fdcf22b96d7e9e354f97a139297c3133.jpg","No gray-on-gray or gloomy lighting. Everything should feel warm and/or colorful."],
+    ["1144336586605605161","3ad409b8ecafe6fedff1b383af32b722.jpg","Color, yes. Not this intense or blocky."],
+    ["1144336586605604865","b0546e9094c12c9d4eaafaf3ea769704.jpg","No gray, empty, lifeless space."],
+    ["1144336586605603677","176501f86bfd82b6e7e535b68a4beac1.jpg","No Camelot castle feeling or this childish color palette."],
+    ["1144336586605603662","e7c20666efd08106b77b15b6802dc6ef.jpg","Too one-dimensional, with clutter above it."],
+    ["1144336586605603462","b47cd19dfec9a7887462479933dfe6e3.jpg","No gray rock treatment."],
+    ["1144336586605603274","656ae5701757173660b67d527505c2b7.jpg","No gray castle."],
+    ["1144336586605603267","4335e6a2f985f838ed29138296c1ea6a.jpg","Too much black in the costumes, and no gray walls."],
+    ["1144336586605603208","adebcced3ad9ed373f4cc1b8a123480d.jpg","The floor is useful. The pictures and wall clutter are not."],
+    ["1144336586605603192","22a780a1398900a0dee9663e474e48a3.jpg","No gaudy color palette."],
+    ["1144336586605603170","39d86c185959d51d858a5e86dca66f98.jpg","No childish colors or gray stone."]
+  ]
+};

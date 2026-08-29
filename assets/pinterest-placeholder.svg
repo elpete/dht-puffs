@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Reference image placeholder</title>
+  <desc id="desc">The original Pinterest image is currently unavailable.</desc>
+  <rect width="800" height="600" fill="#f2e6bd"/>
+  <path d="M80 90h640v420H80z" fill="none" stroke="#765b25" stroke-width="8"/>
+  <text x="400" y="275" text-anchor="middle" fill="#3d2d17" font-family="Georgia,serif" font-size="34">REFERENCE IMAGE</text>
+  <text x="400" y="330" text-anchor="middle" fill="#765b25" font-family="Arial,sans-serif" font-size="22">Open the Pinterest link to view</text>
+</svg>
