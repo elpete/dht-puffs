@@ -21,9 +21,11 @@
     .calendar-frame{display:block;width:100%;height:700px;margin-top:1.5rem;border:2px solid var(--brown);background:#fff}
     h2{margin:0 0 1rem;font-size:clamp(1.8rem,4vw,3.4rem);line-height:1.05}
     p{margin:.35rem 0 0;line-height:1.5}
+    .link-row{display:flex;flex-wrap:wrap;gap:.75rem;align-items:stretch;margin-top:1.5rem}
     .drive-link{display:inline-block;margin:1.5rem 0 0;padding:.9rem 1.1rem;color:var(--paper);background:var(--brown);font:700 .9rem/1 Arial,sans-serif;text-transform:uppercase;letter-spacing:.05em;text-decoration:none;border:2px solid var(--brown);box-shadow:4px 5px 0 var(--shadow);transition:transform .15s ease,box-shadow .15s ease,background-color .15s ease,color .15s ease}
+    .link-row .drive-link{display:flex;align-items:center;margin:0}
     .drive-link:hover,.drive-link:focus-visible{color:var(--ink);background:var(--mustard);transform:translate(-2px,-2px);box-shadow:7px 8px 0 var(--shadow)}
-    @media(max-width:560px){header{border-bottom-width:5px}nav{padding:.5rem 3vw}nav a{flex:1;justify-content:center;text-align:center}.cast-card,.calendar-card{border-width:2px;box-shadow:4px 5px 0 var(--shadow)}.calendar-frame{height:620px}}
+    @media(max-width:560px){header{border-bottom-width:5px}nav{padding:.5rem 3vw}nav a{flex:1;justify-content:center;text-align:center}.cast-card,.calendar-card{border-width:2px;box-shadow:4px 5px 0 var(--shadow)}.link-row{flex-direction:column}.link-row .drive-link{justify-content:center;text-align:center}.calendar-frame{height:620px}}
   </style>
 </head>
 <body>
@@ -44,7 +46,10 @@
     <section class="calendar-card" aria-labelledby="cast-calendar-title">
       <h2 id="cast-calendar-title">Cast Calendar</h2>
       <p>Rehearsals, performances, and other production dates are shown in Mountain Time.</p>
-      <a class="drive-link" href="https://calendar.google.com/calendar/r?cid=8290f2457cb8bb5372159ebaf639e44afbb54a0dc647178d8d0b62ca820baa52%40group.calendar.google.com" target="_blank" rel="noopener">Open Google Calendar</a>
+      <div class="link-row">
+        <a class="drive-link" href="https://calendar.google.com/calendar/r?cid=8290f2457cb8bb5372159ebaf639e44afbb54a0dc647178d8d0b62ca820baa52%40group.calendar.google.com" target="_blank" rel="noopener">Open Google Calendar</a>
+        <a class="drive-link" href="https://docs.google.com/spreadsheets/d/1Whq48ThQPzrBjBhK5BPg5CJMkmJNkiJ6RI-S8J1-vec/edit?usp=drivesdk" target="_blank" rel="noopener">Open Cast Schedule</a>
+      </div>
       <iframe class="calendar-frame" src="https://calendar.google.com/calendar/embed?height=700&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FDenver&amp;showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;src=8290f2457cb8bb5372159ebaf639e44afbb54a0dc647178d8d0b62ca820baa52%40group.calendar.google.com&amp;color=%23d2a51f" title="DHT Puffs cast calendar" loading="lazy"></iframe>
     </section>
   </main>
