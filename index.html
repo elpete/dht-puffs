@@ -21,15 +21,19 @@
     .external-link::after{content:"\2197";margin-left:.45em;font-size:1.15em;line-height:1;transform:translateY(-.08em)}
     main{display:grid;place-items:start;gap:clamp(2rem,5vw,4rem);width:min(1500px,94vw);margin:0 auto;padding:clamp(2rem,5vw,5rem) 0 8rem}
     .cast-card{width:min(720px,100%);padding:clamp(1.5rem,4vw,3rem);background:rgba(255,250,230,.6);border:3px solid var(--brown);box-shadow:7px 8px 0 var(--shadow)}
-    .calendar-card{width:100%;padding:clamp(1.5rem,4vw,3rem);background:rgba(255,250,230,.6);border:3px solid var(--brown);box-shadow:7px 8px 0 var(--shadow)}
-    .calendar-frame{display:block;width:100%;height:700px;margin-top:1.5rem;border:2px solid var(--brown);background:#fff}
     h2{margin:0 0 1rem;font-size:clamp(1.8rem,4vw,3.4rem);line-height:1.05}
     p{margin:.35rem 0 0;line-height:1.5}
-    .link-row{display:flex;flex-wrap:wrap;gap:.75rem;align-items:stretch;margin-top:1.5rem}
     .drive-link{display:inline-block;margin:1.5rem 0 0;padding:.9rem 1.1rem;color:var(--paper);background:var(--brown);font:700 .9rem/1 Arial,sans-serif;text-transform:uppercase;letter-spacing:.05em;text-decoration:none;border:2px solid var(--brown);box-shadow:4px 5px 0 var(--shadow);transition:transform .15s ease,box-shadow .15s ease,background-color .15s ease,color .15s ease}
-    .link-row .drive-link{display:flex;align-items:center;margin:0}
     .drive-link:hover,.drive-link:focus-visible{color:var(--ink);background:var(--mustard);transform:translate(-2px,-2px);box-shadow:7px 8px 0 var(--shadow)}
-    @media(max-width:560px){header{border-bottom-width:5px}.brand-logo{width:76px}h1{font-size:clamp(2.35rem,12vw,3rem)}nav{padding:.5rem 3vw}nav a{flex:1;justify-content:center;text-align:center}.cast-card,.calendar-card{border-width:2px;box-shadow:4px 5px 0 var(--shadow)}.link-row{flex-direction:column}.link-row .drive-link{justify-content:center;text-align:center}.calendar-frame{height:620px}}
+    @media(max-width:560px){header{border-bottom-width:5px}.brand-logo{width:76px}h1{font-size:clamp(2.35rem,12vw,3rem)}nav{padding:.5rem 3vw}nav a{flex:1;justify-content:center;text-align:center}.cast-card{border-width:2px;box-shadow:4px 5px 0 var(--shadow)}}
+    .contacts{list-style:none;margin:0;padding:0}
+    .contacts li{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:.5rem 1.5rem;padding:1rem 0;border-bottom:1px solid var(--paper-deep)}
+    .contacts li:last-child{border-bottom:0;padding-bottom:0}
+    .contacts strong{display:block;font-size:1.15rem}
+    .contacts span{display:block;margin-top:.3rem;line-height:1.5}
+    .contacts a{display:inline-flex;align-items:center;min-height:44px;color:var(--brown);font:700 1rem Arial,sans-serif;white-space:nowrap;text-underline-offset:.2em}
+    .contacts a:hover,.contacts a:focus-visible{color:var(--ink);background:var(--mustard)}
+    @media(max-width:560px){.contacts li{align-items:flex-start;flex-direction:column;gap:.25rem}}
   </style>
 </head>
 <body>
@@ -53,14 +57,14 @@
       <p>Find the latest shared files and production materials in our cast folder.</p>
       <a class="drive-link external-link" href="https://drive.google.com/drive/folders/1mqZgtz2kPDe678QekRyaJdDXzWyVboay?usp=sharing" target="_blank" rel="noopener" aria-label="Open Cast Google Drive (opens in a new tab)">Open Cast Google Drive</a>
     </section>
-    <section class="calendar-card" aria-labelledby="cast-calendar-title">
-      <h2 id="cast-calendar-title">Cast Calendar</h2>
-      <p>Rehearsals, performances, and other production dates are shown in Mountain Time.</p>
-      <div class="link-row">
-        <a class="drive-link external-link" href="https://calendar.google.com/calendar/r?cid=8290f2457cb8bb5372159ebaf639e44afbb54a0dc647178d8d0b62ca820baa52%40group.calendar.google.com" target="_blank" rel="noopener" aria-label="Open Google Calendar (opens in a new tab)">Open Google Calendar</a>
-        <a class="drive-link external-link" href="https://docs.google.com/spreadsheets/d/1Whq48ThQPzrBjBhK5BPg5CJMkmJNkiJ6RI-S8J1-vec/edit?usp=drivesdk" target="_blank" rel="noopener" aria-label="Open Cast Schedule (opens in a new tab)">Open Cast Schedule</a>
-      </div>
-      <iframe class="calendar-frame" src="https://calendar.google.com/calendar/embed?height=700&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FDenver&amp;showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;src=8290f2457cb8bb5372159ebaf639e44afbb54a0dc647178d8d0b62ca820baa52%40group.calendar.google.com&amp;color=%23d2a51f" title="DHT Puffs cast calendar" loading="lazy"></iframe>
+    <section class="cast-card" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact Information</h2>
+      <ul class="contacts">
+        <li><div><strong>Kelsha Peterson</strong><span>Director</span></div><a href="tel:+14357733967" aria-label="Call Kelsha Peterson at (435) 773-3967">(435) 773-3967</a></li>
+        <li><div><strong>Eric Peterson</strong><span>Asst. Director</span></div><a href="tel:+18018644200" aria-label="Call Eric Peterson at (801) 864-4200">(801) 864-4200</a></li>
+        <li><div><strong>Kyra Horman</strong><span>Stage Manager</span></div><a href="tel:+18018285865" aria-label="Call Kyra Horman at (801) 828-5865">(801) 828-5865</a></li>
+        <li><div><strong>Mindy Eckroth</strong><span>Executive Producer</span></div><a href="tel:+18018575729" aria-label="Call Mindy Eckroth at (801) 857-5729">(801) 857-5729</a></li>
+      </ul>
     </section>
   </main>
 </body>
