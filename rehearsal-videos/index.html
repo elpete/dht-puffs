@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Puffs 2026 Cast</title>
+  <title>Rehearsal Videos · Puffs 2026</title>
   <link rel="icon" type="image/png" href="/assets/favicon.png">
   <style>
     :root{--ink:#2d2418;--paper:#f4eccf;--paper-deep:#e7d7a8;--mustard:#d2a51f;--brown:#6b4b24;--green:#52623b;--shadow:rgba(45,36,24,.18)}
@@ -30,6 +30,20 @@
     .link-row .drive-link{display:flex;align-items:center;margin:0}
     .drive-link:hover,.drive-link:focus-visible{color:var(--ink);background:var(--mustard);transform:translate(-2px,-2px);box-shadow:7px 8px 0 var(--shadow)}
     @media(max-width:560px){header{border-bottom-width:5px}.brand-logo{width:76px}h1{font-size:clamp(2.35rem,12vw,3rem)}nav{padding:.5rem 3vw}nav a{flex:1;justify-content:center;text-align:center}.cast-card,.calendar-card{border-width:2px;box-shadow:4px 5px 0 var(--shadow)}.link-row{flex-direction:column}.link-row .drive-link{justify-content:center;text-align:center}.calendar-frame{height:620px}}
+    main{display:block;place-items:normal}
+    .act{width:100%;min-width:0;margin-top:2.5rem;scroll-margin-top:9rem}
+    .act-links{display:flex;gap:1rem;margin-top:1rem}.act-links a{color:var(--brown);font-weight:bold;padding:.5rem 0}
+    .table-scroll{overflow-x:auto;border:2px solid var(--brown);background:rgba(255,250,230,.6);box-shadow:5px 6px 0 var(--shadow)}
+    table{width:100%;border-collapse:collapse;table-layout:fixed;min-width:660px}
+    caption{text-align:left;padding:1rem;line-height:1.5}
+    th,td{padding:1rem;text-align:left;vertical-align:top;border-bottom:1px solid #b8a67e}
+    thead th{background:var(--brown);color:var(--paper);font:700 1rem Arial,sans-serif}
+    thead th:first-child{width:22%}
+    tbody th{font-weight:normal}.pages{display:block;font:700 .8rem Arial,sans-serif;text-transform:uppercase;letter-spacing:.04em;margin-bottom:.5rem}.scene-title{font-size:1.15rem;line-height:1.4}
+    .video{display:block;width:100%;aspect-ratio:16/9;border:0;background:#201e1a}
+    .watch-link{display:inline-block;color:var(--brown);font:700 .8rem Arial,sans-serif;margin:.75rem 0;line-height:1.5}
+    .gap th,.gap td{background:#deded9;color:#575752}.gap .pages{margin-bottom:0}.missing{color:#67655d;font-style:italic}
+    @media(max-width:560px){nav a{flex:1 1 40%}th,td{padding:.75rem}.table-scroll{box-shadow:3px 4px 0 var(--shadow)}}
   </style>
 </head>
 <body>
@@ -38,29 +52,23 @@
       <img class="brand-logo" src="/assets/puffs-logo.png" alt="Puffs">
       <h1>Puffs 2026</h1>
     </div>
-    <p class="intro">Hiii!!! This is our home for the resources we’ll use as we bring this ridiculous and heartwarming story to life together.</p>
+    <p class="intro">Revisit rehearsal by script page, with Loyal Cast and True Cast videos side by side.</p>
   </header>
   <nav aria-label="Primary navigation">
-    <a href="/" aria-current="page">Cast Home</a>
+    <a href="/">Cast Home</a>
     <a href="/vision/">Production Vision</a>
-    <a href="/rehearsal-videos/">Rehearsal Videos</a>
+    <a href="/rehearsal-videos/" aria-current="page">Rehearsal Videos</a>
     <a class="external-link" href="https://web.groupme.com/chats/group/116979585" target="_blank" rel="noopener" aria-label="GroupMe (opens in a new tab)">GroupMe</a>
   </nav>
   <main>
-    <section class="cast-card" aria-labelledby="cast-resources-title">
-      <h2 id="cast-resources-title">Cast Resources</h2>
-      <p>Find the latest shared files and production materials in our cast folder.</p>
-      <a class="drive-link external-link" href="https://drive.google.com/drive/folders/1mqZgtz2kPDe678QekRyaJdDXzWyVboay?usp=sharing" target="_blank" rel="noopener" aria-label="Open Cast Google Drive (opens in a new tab)">Open Cast Google Drive</a>
-    </section>
-    <section class="calendar-card" aria-labelledby="cast-calendar-title">
-      <h2 id="cast-calendar-title">Cast Calendar</h2>
-      <p>Rehearsals, performances, and other production dates are shown in Mountain Time.</p>
-      <div class="link-row">
-        <a class="drive-link external-link" href="https://calendar.google.com/calendar/r?cid=8290f2457cb8bb5372159ebaf639e44afbb54a0dc647178d8d0b62ca820baa52%40group.calendar.google.com" target="_blank" rel="noopener" aria-label="Open Google Calendar (opens in a new tab)">Open Google Calendar</a>
-        <a class="drive-link external-link" href="https://docs.google.com/spreadsheets/d/1Whq48ThQPzrBjBhK5BPg5CJMkmJNkiJ6RI-S8J1-vec/edit?usp=drivesdk" target="_blank" rel="noopener" aria-label="Open Cast Schedule (opens in a new tab)">Open Cast Schedule</a>
-      </div>
-      <iframe class="calendar-frame" src="https://calendar.google.com/calendar/embed?height=700&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FDenver&amp;showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;src=8290f2457cb8bb5372159ebaf639e44afbb54a0dc647178d8d0b62ca820baa52%40group.calendar.google.com&amp;color=%23d2a51f" title="DHT Puffs cast calendar" loading="lazy"></iframe>
-    </section>
+    <h2>Rehearsal Videos</h2>
+    <p>Find your pages below, then choose your cast. Gray rows mark pages without a rehearsal video.</p>
+    <p id="playlist-status">The rehearsal playlist has not been added yet.</p>
+    <div class="act-links"><a href="#act-1">Act I</a><a href="#act-2">Act II</a></div>
+    <div id="video-tables"></div>
+    <noscript>Enable JavaScript to view the rehearsal video tables.</noscript>
   </main>
+  <script src="videos.js"></script>
+  <script src="rehearsal-videos.js"></script>
 </body>
 </html>
