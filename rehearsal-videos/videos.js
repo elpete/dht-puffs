@@ -80,6 +80,14 @@ window.PUFFS_REHEARSAL_VIDEOS = {
     {
       "id": "drB7Bb4QDkM",
       "title": "Welcome to the Puffs Loyal Cast (8-10)"
+    },
+    {
+      "id": "G4pCpiaCp60",
+      "title": "Studies Loyal Cast (10-13)"
+    },
+    {
+      "id": "SOEgTWgDI9U",
+      "title": "Studies True Cast (10-13)"
     }
   ]
 };
