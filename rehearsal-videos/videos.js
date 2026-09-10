@@ -88,6 +88,46 @@ window.PUFFS_REHEARSAL_VIDEOS = {
     {
       "id": "SOEgTWgDI9U",
       "title": "Studies True Cast (10-13)"
+    },
+    {
+      "id": "4cvh57enmo4",
+      "title": "Sports & End of the Year Loyal Cast (22-23)"
+    },
+    {
+      "id": "tph_iAXg-Tg",
+      "title": "Sports & End of the Year True Cast (22-23)"
+    },
+    {
+      "id": "ufd8bgttI-M",
+      "title": "Trio Born pt2/Wayne & Cedric True Cast (18-21)"
+    },
+    {
+      "id": "h6cCfEOUqCk",
+      "title": "Trio Born pt2/Wayne & Cedric Loyal Cast (18-21)"
+    },
+    {
+      "id": "1YMMEjcwGRA",
+      "title": "Year 2/Duelling & Snakes True Cast (23-27)"
+    },
+    {
+      "id": "t7DJzNZhNDI",
+      "title": "Year 2/Duelling & Snakes Loyal Cast (23-27)"
+    },
+    {
+      "id": "LpBcG7pH5Xs",
+      "title": "The heir of Snakes True Cast (27-29)"
+    },
+    {
+      "id": "dNDNSOIe670",
+      "title": "The heir of Snakes Loyal Cast (27-29)"
+    },
+    {
+      "id": "-YMigBF52UU",
+      "title": "Great Hall/EOY Again True Cast (29-30)"
+    },
+    {
+      "id": "MijuR4tJsWo",
+      "title": "Great Hall/EOY Again Loyal Cast (29-30)"
     }
   ]
 };
