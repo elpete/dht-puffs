@@ -128,6 +128,46 @@ window.PUFFS_REHEARSAL_VIDEOS = {
     {
       "id": "MijuR4tJsWo",
       "title": "Great Hall/EOY Again Loyal Cast (29-30)"
+    },
+    {
+      "id": "OQpwBV1jEFE",
+      "title": "The First Task True Cast (47-50)"
+    },
+    {
+      "id": "i8li6WMfGz4",
+      "title": "The First Task Loyal Cast (47-50)"
+    },
+    {
+      "id": "UkCeTMD9614",
+      "title": "Bathroom Dance True Cast (54)"
+    },
+    {
+      "id": "GciHTo3N_M8",
+      "title": "Bathroom Dance Loyal Cast (54)"
+    },
+    {
+      "id": "-NlAHnWK084",
+      "title": "A Bathroom Loyal Cast (54-55)"
+    },
+    {
+      "id": "qUOmKMVuF-o",
+      "title": "A Bathroom True Cast (54-55)"
+    },
+    {
+      "id": "vNSGio7fFmA",
+      "title": "The Second Task True Cast (57-58)"
+    },
+    {
+      "id": "-a3I2ErjPR0",
+      "title": "The Second Task Loyal Cast (57-58)"
+    },
+    {
+      "id": "xbf3YswJCWk",
+      "title": "The Third Task True Cast (60-61)"
+    },
+    {
+      "id": "j38FvW9_YGs",
+      "title": "The Second Task Loyal Cast (57-58)"
     }
   ]
 };
