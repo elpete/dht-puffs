@@ -168,6 +168,74 @@ window.PUFFS_REHEARSAL_VIDEOS = {
     {
       "id": "j38FvW9_YGs",
       "title": "The Second Task Loyal Cast (57-58)"
+    },
+    {
+      "id": "hXyzsYM2Vgw",
+      "title": "Year 3/Electives/Slumber party True Cast (32-36)"
+    },
+    {
+      "id": "fDw5Nr_ZvZs",
+      "title": "Year 3/Electives/Slumber party Loyal Cast (32-36)"
+    },
+    {
+      "id": "z19yo6yehPc",
+      "title": "Dates for the Ball True Cast (50-52)"
+    },
+    {
+      "id": "y_xJgFhvIJk",
+      "title": "Dates for the Ball Loyal Cast (50-52)"
+    },
+    {
+      "id": "KSqkMdrkK2E",
+      "title": "Field Trip True Cast (39-40)"
+    },
+    {
+      "id": "PMqo-iLR82c",
+      "title": "Field Trip Loyal Cast (39-40)"
+    },
+    {
+      "id": "HfHcXfftarE",
+      "title": "Not Forgivable Curses/Days before the first task True Cast (44-47)"
+    },
+    {
+      "id": "6o8hg-O4qqQ",
+      "title": "Puffs Roll Call True Cast (57)"
+    },
+    {
+      "id": "hAsPb4818RE",
+      "title": "Puffs Roll Call Loyal Cast (57)"
+    },
+    {
+      "id": "ueparn9B0Zk",
+      "title": "Act 2 Loyal Cast (62-63)"
+    },
+    {
+      "id": "rJUCilwAX84",
+      "title": "Act 2 True Cast (62-63)"
+    },
+    {
+      "id": "Pr_LhFixBn8",
+      "title": "Welcome Back True Cast (63-65)"
+    },
+    {
+      "id": "KKeRFgXSId4",
+      "title": "Welcome Back Loyal Cast (63-65)"
+    },
+    {
+      "id": "uYykLHg1z3Y",
+      "title": "The Rest of Year 5 Loyal Cast (65-69)"
+    },
+    {
+      "id": "kTRlASuHGhM",
+      "title": "The Rest of Year 5 True Cast (65-69)"
+    },
+    {
+      "id": "NmsYyG44-dg",
+      "title": "The Dark Lord True Cast (70-71)"
+    },
+    {
+      "id": "JShiMhid3XY",
+      "title": "The Dark Lord Loyal Cast (70-71)"
     }
   ]
 };
