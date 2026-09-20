@@ -236,6 +236,30 @@ window.PUFFS_REHEARSAL_VIDEOS = {
     {
       "id": "JShiMhid3XY",
       "title": "The Dark Lord Loyal Cast (70-71)"
+    },
+    {
+      "id": "m5d-mT3_KPw",
+      "title": "Battle pt 1 True Cast (90-94)"
+    },
+    {
+      "id": "RTmvHViNyGU",
+      "title": "Battle pt 1 Loyal Cast (90-94)"
+    },
+    {
+      "id": "iO04_3APY5w",
+      "title": "Hallway/Perks of love/Mummy pt 1 True Cast (74-78)"
+    },
+    {
+      "id": "ZicagiTZsk4",
+      "title": "Hallway/Perks of love/Mummy pt 1 Loyal Cast (74-78)"
+    },
+    {
+      "id": "xlqqEkal7Lg",
+      "title": "Snogging 101 True Cast (71-74)"
+    },
+    {
+      "id": "QKmo-VIzyOI",
+      "title": "Snogging 101 Loyal Cast (71-74)"
     }
   ]
 };
