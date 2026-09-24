@@ -260,6 +260,38 @@ window.PUFFS_REHEARSAL_VIDEOS = {
     {
       "id": "QKmo-VIzyOI",
       "title": "Snogging 101 Loyal Cast (71-74)"
+    },
+    {
+      "id": "Ioq7yfyH89o",
+      "title": "A Great Hall Slumber Party Loyal Cast (35-38)"
+    },
+    {
+      "id": "fmLiD1vcwRw",
+      "title": "A Great Hall Slumber Party True Cast (35-38)"
+    },
+    {
+      "id": "A3s7bWepPBo",
+      "title": "Battle pt 2 True Cast (94-97)"
+    },
+    {
+      "id": "XrOLaanBCDc",
+      "title": "Battle pt 2 Loyal Cast (94-97)"
+    },
+    {
+      "id": "yBcVgylq00M",
+      "title": "Leanne fight True Cast (94)"
+    },
+    {
+      "id": "HPfE1RbY_bo",
+      "title": "Leanne fight Loyal Cast (94)"
+    },
+    {
+      "id": "Qse8gc9yfnc",
+      "title": "Nineteen Years/Epilouge Loyal Cast (99-100)"
+    },
+    {
+      "id": "B2f7nYHAPm0",
+      "title": "Nineteen Years/Epilouge True Cast (99-100)"
     }
   ]
 };
